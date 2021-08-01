@@ -106,7 +106,7 @@ app.post("/",function(req,res){
 
   });
 
-app.listen(3100,function(){
+app.listen(process.env.PORT,function(){
 console.log("Listening on port 3100");
 });
 
