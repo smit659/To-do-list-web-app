@@ -29,11 +29,11 @@ div{
     width: 100%;
 }
     #textbox{
-        padding: 20px;
+        padding: 30px;
         
         background-color:black;
         color: white;
-        width: 150px;
+        width: 200px;
         
     }
     form{
@@ -43,6 +43,7 @@ div{
     }
     button{
         font-size: small;
+        width: 50px;
     }
     
 }
