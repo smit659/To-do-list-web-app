@@ -1,0 +1,8 @@
+input:checked +span{
+text-decoration-color: brown;
+text-decoration-line: line-through;
+/* text-decoration-style: double   ; */
+}
+html{
+    background-image: -webkit-linear-gradient(65deg,rgb(53, 180, 21) 55%,#d2d2d2 45%);
+}
