@@ -4,5 +4,39 @@ text-decoration-line: line-through;
 /* text-decoration-style: double   ; */
 }
 html{
-    background-image: -webkit-linear-gradient(65deg,rgb(53, 180, 21) 55%,#d2d2d2 45%);
+    /* background-image: -webkit-linear-gradient(65deg,rgb(53, 180, 21) 55%,#d2d2d2 45%); */
+    background-color: black;
+}
+div{
+    width: 50%;
+    border: 2px solid white;
+    margin: 20px auto;
+    color: white;
+}
+form{
+    margin-left: 200px;
+}
+button{
+    margin-left: 20px;
+    padding: 8px;
+    padding-left: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 120px;
+    box-shadow: 3px 2px rgb(128, 128, 124);
+}
+footer{
+    text-align:center;
+    margin-top: 40px;
+}
+h1{
+    text-align:center;
+    color: white;
+}
+#textbox{
+    background-color: black;
+    
+    border: 1px solid red;
+    color: white;
+    padding: 10px;
 }

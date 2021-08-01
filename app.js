@@ -47,12 +47,12 @@ res.redirect('/'+paramss);
 });
 const lists=mongoose.model('todo',todoSchema);
 app.get("/",function(req,res){
- var k=st.simp();
+ let k=st.simp();
  console.log(st.gaad);
  lists.find(function(err,as)
  {
  console.log(as);
- res.render("todo",{erl:as,tdate:"today"});
+ res.render("todo",{erl:as,tdate:k});
 
  });
 });
@@ -63,7 +63,7 @@ app.post("/",function(req,res){
  const constants=  new lists({
      todos:newItem
    });
-   if(labl=='today')
+   if(labl==st.simp())
    { 
    constants.save();
    res.redirect("/");
@@ -82,7 +82,7 @@ app.post("/",function(req,res){
   app.post('/delete',function(req,res){
   const iid=req.body.checkboxx;
   const hidens=req.body.hide;
-  if(hidens=='today')
+  if(hidens===st.simp() )
   {
     lists.findByIdAndRemove({_id:iid},function(err,rs){
       if(!err)
@@ -107,6 +107,6 @@ app.post("/",function(req,res){
   });
 
 app.listen(process.env.PORT||3000,function(){
-console.log("Listening on port 3000");
+console.log("SERVER IS OK");
 });
 

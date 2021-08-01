@@ -9,13 +9,14 @@
 </head>
 
 <body style="color: black;">
+    <div>
     <h1> <%= tdate%></h1>
  
        <% for(var i=0;i<erl.length;i++) 
       {%> 
        <form action="/delete" method="post">
         <p>
-        <input value="<%= erl[i]._id %>" onchange="this.form.submit()" name="checkboxx" type="checkbox" name="checkbox" >
+        <input  value="<%= erl[i]._id %>" onchange="this.form.submit()" name="checkboxx" type="checkbox" name="checkbox" >
    <span>   <%=erl[i].todos%>  </span>
     </p>
     <input type="hidden" name="hide" value="<%=tdate%>" >
@@ -23,8 +24,12 @@
       <% }%>
     
     <form action="/" method="post">
-    <input type="text" name="newItem" autofocus placeholder="Enter Your Today's Task" autocomplete="off">
+    <input id="textbox" type="text" name="newItem" autofocus placeholder="Enter Your Today's Task" autocomplete="off">
     <button type="submit" name="btn" value="<%=tdate%>">Add</button>
     </form>
+    <footer style="color: white;">
+        Made with ❤ by Smit Soni
+    </footer>
+</div>
 </body>
 </html>
