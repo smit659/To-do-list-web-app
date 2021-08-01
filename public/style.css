@@ -3,6 +3,10 @@ text-decoration-color: brown;
 text-decoration-line: line-through;
 /* text-decoration-style: double   ; */
 }
+*{
+    padding: 0;
+    margin: 0;
+}
 html{
     /* background-image: -webkit-linear-gradient(65deg,rgb(53, 180, 21) 55%,#d2d2d2 45%); */
     background-color: black;
@@ -14,7 +18,30 @@ div{
     color: white;
 }
 form{
-    margin-left: 200px;
+    margin-left: 250px;
+
+}
+@media screen  and (max-width:990px){
+body{
+    font-size: xx-small;
+}
+    #textbox{
+        padding: 10px;
+        
+        background-color:black;
+        color: white;
+        width: 100px;
+        font-size: xx-small;
+    }
+    form{
+        margin: 0px;
+        margin-left: 8px;
+        margin-top: 5px;
+    }
+    button{
+        font-size: xx-small;
+    }
+    
 }
 button{
     margin-left: 20px;
@@ -38,5 +65,5 @@ h1{
     
     border: 1px solid red;
     color: white;
-    padding: 10px;
+    padding: 0px;
 }
