@@ -33,16 +33,16 @@ div{
         
         background-color:black;
         color: white;
-        width: 100px;
+        width: 150px;
         
     }
     form{
         margin: 0px;
-        margin-left: 8px;
-        margin-top: 5px;
+        margin-left: 9px;
+        margin-top: 10px;
     }
     button{
-        font-size: xx-small;
+        font-size: small;
     }
     
 }
