@@ -27,10 +27,14 @@ body{
 }
 div{
     width: 100%;
+    box-sizing:content-box;
+    overflow:scroll;
+
 }
     #textbox{
         padding: 30px;
-        
+        box-sizing:content-box;
+
         background-color:black;
         color: white;
         width: 200px;
@@ -40,7 +44,9 @@ div{
     form{
         margin: 0px;
         margin-left: 9px;
+        box-sizing:content-box;
         margin-top: 10px;
+
     }
     button{
         font-size: small;
